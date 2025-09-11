@@ -10,7 +10,7 @@
 
 ## 使用方法
 
-1. 
+1. `git clone https://github.com/wjjtc/record_algorithm.git` 克隆仓库
 2. 按目录浏览内容
 3. 阅读题目分析和解题思路
 4. 参考代码实现，尝试独立完成
