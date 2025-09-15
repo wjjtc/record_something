@@ -5,12 +5,13 @@
 ## 目录
 
 - `algorithms/`：算法及数据结构
-- `notes/`：学习笔记与心得
+- `python/`：python相关
+- `deep_learning/`：深度学习相关
 - 等等
 
 ## 使用方法
 
-1. `git clone https://github.com/wjjtc/record_algorithm.git` 克隆仓库
+1. `git clone https://github.com/wjjtc/record_something.git` 克隆仓库
 2. 按目录浏览内容
 
 
