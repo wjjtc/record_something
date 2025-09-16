@@ -51,9 +51,9 @@ text = process_text("hello world")
 
 Python
 
-# in my_package/__init__.py
+in my_package/__init__.py
 
-# 从子模块中导入我们想暴露给用户的成员
+从子模块中导入我们想暴露给用户的成员
 from .core import MainClass
 from .utils.string_helpers import process_text
 from .utils.number_helpers import format_number
