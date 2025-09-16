@@ -65,7 +65,7 @@ print("my_package is being initialized!") # 这行代码只会在第一次导入
 
 Python
 
-# 用户的代码变得非常干净
+用户的代码变得非常干净
 from my_package import MainClass, process_text, format_number
 
 mc = MainClass()
@@ -94,10 +94,10 @@ __init__.py 文件中的代码，会在这个包第一次被导入时自动执�
 
 Python
 
-# in my_package/__init__.py
+in my_package/__init__.py
 import logging
 
-# 配置一个包级别的 logger
+配置一个包级别的 logger
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 logger.info("Logger for my_package configured.")
@@ -116,10 +116,9 @@ from .core import MainClass
 from .utils.string_helpers import process_text
 from .utils.number_helpers import format_number
 
-# 这是一个内部使用的辅助函数，我们不希望用户通过 import * 导入它
+这是一个内部使用的辅助函数，我们不希望用户通过 import * 导入它
 def _internal_helper():
     print("Internal stuff")
-
-# 只希望用户通过 "import *" 得到 MainClass 和 process_text
+只希望用户通过 "import *" 得到 MainClass 和 process_text
 __all__ = ['MainClass', 'process_text']
 现在，如果用户执行 from my_package import *，他们的命名空间中将只有 MainClass 和 process_text，而 format_number 和 _internal_helper 都不会被导入。
